@@ -1,0 +1,15 @@
+E:\作业\HL7通信程序\HL7通信程序\obj\Debug\HL7Application.csprojAssemblyReference.cache
+E:\作业\HL7通信程序\HL7通信程序\obj\Debug\HL7通信程序.Properties.Resources.resources
+E:\作业\HL7通信程序\HL7通信程序\obj\Debug\HL7Application.csproj.GenerateResource.cache
+E:\作业\HL7通信程序\HL7通信程序\obj\Debug\HL7Application.csproj.CoreCompileInputs.cache
+E:\作业\HL7通信程序\HL7通信程序\obj\Debug\HL7通信程序.exe
+E:\作业\HL7通信程序\HL7通信程序\obj\Debug\HL7通信程序.pdb
+E:\作业\HL7通信程序\HL7通信程序\bin\Debug\HL7通信程序.exe.config
+E:\作业\HL7通信程序\HL7通信程序\bin\Debug\HL7通信程序.exe
+E:\作业\HL7通信程序\HL7通信程序\bin\Debug\HL7通信程序.pdb
+E:\作业\HL7通信程序\HL7通信程序\bin\Debug\HL7Socket.dll
+E:\作业\HL7通信程序\HL7通信程序\bin\Debug\MLLP.dll
+E:\作业\HL7通信程序\HL7通信程序\bin\Debug\MLLP.pdb
+E:\作业\HL7通信程序\HL7通信程序\bin\Debug\HL7Socket.pdb
+E:\作业\HL7通信程序\HL7通信程序\obj\Debug\HL7Application.FormApplication.resources
+E:\作业\HL7通信程序\HL7通信程序\obj\Debug\HL7Application.csproj.CopyComplete

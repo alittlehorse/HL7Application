@@ -1,0 +1,9 @@
+E:\作业\HL7通信程序\MLLP\obj\Debug\MLLP.csprojAssemblyReference.cache
+E:\作业\HL7通信程序\MLLP\obj\Debug\MLLP.csproj.CoreCompileInputs.cache
+E:\作业\HL7通信程序\MLLP\bin\Debug\MLLP.dll
+E:\作业\HL7通信程序\MLLP\bin\Debug\MLLP.pdb
+E:\作业\HL7通信程序\MLLP\bin\Debug\HL7Socket.dll
+E:\作业\HL7通信程序\MLLP\bin\Debug\HL7Socket.pdb
+E:\作业\HL7通信程序\MLLP\obj\Debug\MLLP.csproj.CopyComplete
+E:\作业\HL7通信程序\MLLP\obj\Debug\MLLP.dll
+E:\作业\HL7通信程序\MLLP\obj\Debug\MLLP.pdb
