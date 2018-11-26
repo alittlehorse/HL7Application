@@ -1,0 +1,49 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2000
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HL7Application", "HL7通信程序\HL7Application.csproj", "{BFCB6D80-419F-4D30-9A23-35FF117E3503}"
+	ProjectSection(ProjectDependencies) = postProject
+		{4337D417-0B7F-4603-B14C-91BEC27EEAD0} = {4337D417-0B7F-4603-B14C-91BEC27EEAD0}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HL7Socket", "HL7Socket\HL7Socket.csproj", "{4337D417-0B7F-4603-B14C-91BEC27EEAD0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MLLP", "MLLP\MLLP.csproj", "{9184BD9D-2665-4852-9C0C-B2E785C55A89}"
+	ProjectSection(ProjectDependencies) = postProject
+		{4337D417-0B7F-4603-B14C-91BEC27EEAD0} = {4337D417-0B7F-4603-B14C-91BEC27EEAD0}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HL7LIB", "HL7LIB\HL7LIB.csproj", "{52D60438-51DA-4CB3-BD08-F8D3ED838299}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BFCB6D80-419F-4D30-9A23-35FF117E3503}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BFCB6D80-419F-4D30-9A23-35FF117E3503}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BFCB6D80-419F-4D30-9A23-35FF117E3503}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BFCB6D80-419F-4D30-9A23-35FF117E3503}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4337D417-0B7F-4603-B14C-91BEC27EEAD0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4337D417-0B7F-4603-B14C-91BEC27EEAD0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4337D417-0B7F-4603-B14C-91BEC27EEAD0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4337D417-0B7F-4603-B14C-91BEC27EEAD0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9184BD9D-2665-4852-9C0C-B2E785C55A89}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9184BD9D-2665-4852-9C0C-B2E785C55A89}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9184BD9D-2665-4852-9C0C-B2E785C55A89}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9184BD9D-2665-4852-9C0C-B2E785C55A89}.Release|Any CPU.Build.0 = Release|Any CPU
+		{52D60438-51DA-4CB3-BD08-F8D3ED838299}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{52D60438-51DA-4CB3-BD08-F8D3ED838299}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{52D60438-51DA-4CB3-BD08-F8D3ED838299}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{52D60438-51DA-4CB3-BD08-F8D3ED838299}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C4C7F2B3-176D-4E2E-8F7F-7DE5696531B1}
+	EndGlobalSection
+EndGlobal

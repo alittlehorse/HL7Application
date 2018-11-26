@@ -1,6 +1,0 @@
-E:\作业\HL7通信程序\HL7Socket\bin\Debug\HL7Socket.dll
-E:\作业\HL7通信程序\HL7Socket\bin\Debug\HL7Socket.pdb
-E:\作业\HL7通信程序\HL7Socket\obj\Debug\HL7Socket.csproj.CoreCompileInputs.cache
-E:\作业\HL7通信程序\HL7Socket\obj\Debug\HL7Socket.dll
-E:\作业\HL7通信程序\HL7Socket\obj\Debug\HL7Socket.pdb
-E:\作业\HL7通信程序\HL7Socket\obj\Debug\HL7Socket.csprojAssemblyReference.cache

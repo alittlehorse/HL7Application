@@ -1,0 +1,155 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="HL7LIB.abstractType">
+    <Position X="6.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAgAAAAAAAAAAAEAAAAAAQAAAAEACAAAAAgAAAAAAA=</HashCode>
+      <FileName>abstractType.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HL7LIB.common">
+    <Position X="9.75" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAAAAAQAAAAAAAAAAgAAAAAAAABAAAAAICBAAA=</HashCode>
+      <FileName>common.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HL7LIB.primitiveType">
+    <Position X="4" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>abstractType.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HL7LIB.compositeType">
+    <Position X="10.25" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAAAABAAAAAEAAAAAAAAAAAAAAAAAAAQAAAAAAA=</HashCode>
+      <FileName>abstractType.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HL7LIB.ID">
+    <Position X="0.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ID.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HL7LIB.IS">
+    <Position X="2.75" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ID.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HL7LIB.NM">
+    <Position X="0.5" Y="9.25" Width="1.5" />
+    <InheritanceLine Type="HL7LIB.primitiveType" ManuallyRouted="true">
+      <Path>
+        <Point X="4.75" Y="5.57" />
+        <Point X="4.75" Y="8.883" />
+        <Point X="1.25" Y="8.883" />
+        <Point X="1.25" Y="9.25" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ID.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HL7LIB.ST">
+    <Position X="2.25" Y="9.25" Width="1.5" />
+    <InheritanceLine Type="HL7LIB.primitiveType" ManuallyRouted="true">
+      <Path>
+        <Point X="4.75" Y="5.57" />
+        <Point X="4.75" Y="8.883" />
+        <Point X="3" Y="8.883" />
+        <Point X="3" Y="9.25" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ID.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HL7LIB.SI">
+    <Position X="4" Y="9.25" Width="1.5" />
+    <InheritanceLine Type="HL7LIB.primitiveType" ManuallyRouted="true">
+      <Path>
+        <Point X="4.75" Y="5.57" />
+        <Point X="4.75" Y="9.25" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ID.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HL7LIB.DT">
+    <Position X="5.25" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ID.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HL7LIB.TM">
+    <Position X="7" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ID.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HL7LIB.TS">
+    <Position X="9" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ID.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HL7LIB.TX">
+    <Position X="5.75" Y="9.25" Width="1.5" />
+    <InheritanceLine Type="HL7LIB.primitiveType" FixedToPoint="true">
+      <Path>
+        <Point X="4.75" Y="5.57" />
+        <Point X="4.75" Y="8.883" />
+        <Point X="6.562" Y="8.883" />
+        <Point X="6.562" Y="9.25" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ID.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HL7LIB.TN">
+    <Position X="7.5" Y="9.25" Width="1.5" />
+    <InheritanceLine Type="HL7LIB.primitiveType" ManuallyRouted="true" FixedToPoint="true">
+      <Path>
+        <Point X="4.75" Y="5.57" />
+        <Point X="4.75" Y="8.883" />
+        <Point X="8.312" Y="8.883" />
+        <Point X="8.312" Y="9.25" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ID.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HL7LIB.FT">
+    <Position X="9.25" Y="9.25" Width="1.5" />
+    <InheritanceLine Type="HL7LIB.primitiveType" ManuallyRouted="true" FixedToPoint="true">
+      <Path>
+        <Point X="4.75" Y="5.57" />
+        <Point X="4.75" Y="8.883" />
+        <Point X="10" Y="8.883" />
+        <Point X="10" Y="9.25" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ID.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Microsoft YaHei UI" Size="9" />
+</ClassDiagram>
