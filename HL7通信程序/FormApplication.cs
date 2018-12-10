@@ -97,10 +97,8 @@ namespace HL7Application
         //由MLLP的接收完成事件触发的函数
         private void MsgProc(object sender,msgEventArgs args)
         {
-            rtx_ReceiveMessage.Invoke((Action)delegate ()
-            {
-                rtx_ReceiveMessage.AppendText(args.msg);
-            });
+            Action b = () => rtx_ReceiveMessage.AppendText(args.msg);
+            rtx_ReceiveMessage.Invoke(b);
         }
 
         private void Update_rtx_ReceiveMessag(object sender, msgSend args)

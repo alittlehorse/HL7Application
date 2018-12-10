@@ -46,9 +46,12 @@ namespace HL7LIB
         public abstract override string ToString();
     }
 
+
     public class primitiveType : abstractType
     {
-        public primitiveType(string name) : base(name) { }
+        public primitiveType(string name) : base(name) {
+            
+        }
         public override bool Parse(string text)
         {
             value = text;

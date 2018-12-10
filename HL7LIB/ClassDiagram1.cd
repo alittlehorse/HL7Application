@@ -22,7 +22,7 @@
     </TypeIdentifier>
   </Class>
   <Class Name="HL7LIB.compositeType">
-    <Position X="10.25" Y="4" Width="1.5" />
+    <Position X="14.5" Y="4" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAgAAAAABAAAAAEAAAAAAAAAAAAAAAAAAAQAAAAAAA=</HashCode>
       <FileName>abstractType.cs</FileName>
@@ -149,6 +149,27 @@
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>ID.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HL7LIB.compositeMessage">
+    <Position X="12.25" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>compositeMessage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HL7LIB.compositeSegment">
+    <Position X="14.5" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>compositeMessage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HL7LIB.compositeField">
+    <Position X="16.75" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>compositeMessage.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Font Name="Microsoft YaHei UI" Size="9" />

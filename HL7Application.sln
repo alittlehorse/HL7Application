@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MLLP", "MLLP\MLLP.csproj", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HL7LIB", "HL7LIB\HL7LIB.csproj", "{52D60438-51DA-4CB3-BD08-F8D3ED838299}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HL7LIBTests", "HL7LIBTests\HL7LIBTests.csproj", "{F31E7A93-75BB-441C-9B9B-FEC9E3BA4DCF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{52D60438-51DA-4CB3-BD08-F8D3ED838299}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{52D60438-51DA-4CB3-BD08-F8D3ED838299}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{52D60438-51DA-4CB3-BD08-F8D3ED838299}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F31E7A93-75BB-441C-9B9B-FEC9E3BA4DCF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F31E7A93-75BB-441C-9B9B-FEC9E3BA4DCF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F31E7A93-75BB-441C-9B9B-FEC9E3BA4DCF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F31E7A93-75BB-441C-9B9B-FEC9E3BA4DCF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

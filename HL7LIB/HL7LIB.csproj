@@ -41,8 +41,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="abstractType.cs" />
+    <Compile Include="CE.cs" />
     <Compile Include="common.cs" />
+    <Compile Include="compositeMessage.cs" />
     <Compile Include="ID.cs" />
+    <Compile Include="MSA.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

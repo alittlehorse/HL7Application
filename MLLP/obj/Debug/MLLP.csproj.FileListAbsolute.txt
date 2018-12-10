@@ -7,3 +7,12 @@ E:\作业\HL7通信程序\MLLP\bin\Debug\HL7Socket.pdb
 E:\作业\HL7通信程序\MLLP\obj\Debug\MLLP.csproj.CopyComplete
 E:\作业\HL7通信程序\MLLP\obj\Debug\MLLP.dll
 E:\作业\HL7通信程序\MLLP\obj\Debug\MLLP.pdb
+E:\github\HL7Application\MLLP\bin\Debug\MLLP.dll
+E:\github\HL7Application\MLLP\bin\Debug\MLLP.pdb
+E:\github\HL7Application\MLLP\bin\Debug\HL7Socket.dll
+E:\github\HL7Application\MLLP\bin\Debug\HL7Socket.pdb
+E:\github\HL7Application\MLLP\obj\Debug\MLLP.csprojAssemblyReference.cache
+E:\github\HL7Application\MLLP\obj\Debug\MLLP.csproj.CoreCompileInputs.cache
+E:\github\HL7Application\MLLP\obj\Debug\MLLP.csproj.CopyComplete
+E:\github\HL7Application\MLLP\obj\Debug\MLLP.dll
+E:\github\HL7Application\MLLP\obj\Debug\MLLP.pdb

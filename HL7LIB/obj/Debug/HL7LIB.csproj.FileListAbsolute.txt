@@ -4,3 +4,9 @@ E:\作业\HL7通信程序\HL7LIB\obj\Debug\HL7LIB.csprojAssemblyReference.cache
 E:\作业\HL7通信程序\HL7LIB\obj\Debug\HL7LIB.csproj.CoreCompileInputs.cache
 E:\作业\HL7通信程序\HL7LIB\obj\Debug\HL7LIB.dll
 E:\作业\HL7通信程序\HL7LIB\obj\Debug\HL7LIB.pdb
+E:\github\HL7Application\HL7LIB\bin\Debug\HL7LIB.dll
+E:\github\HL7Application\HL7LIB\bin\Debug\HL7LIB.pdb
+E:\github\HL7Application\HL7LIB\obj\Debug\HL7LIB.csprojAssemblyReference.cache
+E:\github\HL7Application\HL7LIB\obj\Debug\HL7LIB.csproj.CoreCompileInputs.cache
+E:\github\HL7Application\HL7LIB\obj\Debug\HL7LIB.dll
+E:\github\HL7Application\HL7LIB\obj\Debug\HL7LIB.pdb

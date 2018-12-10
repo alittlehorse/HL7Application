@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace HL7LIB
+namespace HL7LIB.ConcretcompositeType
 {
     public class ID : primitiveType
     {
