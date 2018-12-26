@@ -6,8 +6,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{BFCB6D80-419F-4D30-9A23-35FF117E3503}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>HL7通信程序</RootNamespace>
-    <AssemblyName>HL7通信程序</AssemblyName>
+    <RootNamespace>HL7Application</RootNamespace>
+    <AssemblyName>HL7Application</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -32,6 +32,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="HL7LIB">
+      <HintPath>..\HL7LIB\bin\Debug\HL7LIB.dll</HintPath>
+    </Reference>
     <Reference Include="HL7Socket">
       <HintPath>..\HL7Socket\bin\Debug\HL7Socket.dll</HintPath>
     </Reference>
@@ -67,6 +70,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

@@ -10,3 +10,9 @@ E:\github\HL7Application\HL7Socket\obj\Debug\HL7Socket.csprojAssemblyReference.c
 E:\github\HL7Application\HL7Socket\obj\Debug\HL7Socket.csproj.CoreCompileInputs.cache
 E:\github\HL7Application\HL7Socket\obj\Debug\HL7Socket.dll
 E:\github\HL7Application\HL7Socket\obj\Debug\HL7Socket.pdb
+D:\GitProject\HL7Application\HL7Socket\bin\Debug\HL7Socket.dll
+D:\GitProject\HL7Application\HL7Socket\bin\Debug\HL7Socket.pdb
+D:\GitProject\HL7Application\HL7Socket\obj\Debug\HL7Socket.csprojAssemblyReference.cache
+D:\GitProject\HL7Application\HL7Socket\obj\Debug\HL7Socket.csproj.CoreCompileInputs.cache
+D:\GitProject\HL7Application\HL7Socket\obj\Debug\HL7Socket.dll
+D:\GitProject\HL7Application\HL7Socket\obj\Debug\HL7Socket.pdb

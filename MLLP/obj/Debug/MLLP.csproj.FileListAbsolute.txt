@@ -16,3 +16,12 @@ E:\github\HL7Application\MLLP\obj\Debug\MLLP.csproj.CoreCompileInputs.cache
 E:\github\HL7Application\MLLP\obj\Debug\MLLP.csproj.CopyComplete
 E:\github\HL7Application\MLLP\obj\Debug\MLLP.dll
 E:\github\HL7Application\MLLP\obj\Debug\MLLP.pdb
+D:\GitProject\HL7Application\MLLP\bin\Debug\MLLP.dll
+D:\GitProject\HL7Application\MLLP\bin\Debug\MLLP.pdb
+D:\GitProject\HL7Application\MLLP\bin\Debug\HL7Socket.dll
+D:\GitProject\HL7Application\MLLP\bin\Debug\HL7Socket.pdb
+D:\GitProject\HL7Application\MLLP\obj\Debug\MLLP.csprojAssemblyReference.cache
+D:\GitProject\HL7Application\MLLP\obj\Debug\MLLP.csproj.CoreCompileInputs.cache
+D:\GitProject\HL7Application\MLLP\obj\Debug\MLLP.csproj.CopyComplete
+D:\GitProject\HL7Application\MLLP\obj\Debug\MLLP.dll
+D:\GitProject\HL7Application\MLLP\obj\Debug\MLLP.pdb

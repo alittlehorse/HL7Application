@@ -10,18 +10,20 @@ namespace HL7LIB.ConcretcompositeType
     {
         public MSA(compositeType parent, string name) : base(parent, name)
         {
-            data = new abstractType[5];
+            data = new abstractType[6];
             data[0] = new ID("AcknowledgmentCode");
             data[1] = new ST("MessageControlID");
             data[2] = new ST("TextMessage");
             data[3] = new NM("ExpectedSequenceNumber");
-            data[4] = new CE(this,"ErrorCondition");
+            data[4] = new ID("DelayedAcknowledgmentType");
+            data[5] = new CE(this,"ErrorCondition");
         }
         public ID AcknowledgmentCode { get { return data[0] as ID; } set { data[0] = value; } }
         public ST MessageControlID { get { return data[1] as ST; } set { data[1] = value; } }
         public ST TextMessage { get { return data[2] as ST; } set { data[2] = value; } }
         public NM ExpectedSequenceNumber { get { return data[3] as NM; } set { data[3] = value; } }
-        public CE ErrorCondition { get { return data[4] as CE; } set { data[4] = value; } }
+        public ID DelayedAcknowledgmentType { get { return data[4] as ID; } set { data[4] = value; } }
+        public CE ErrorCondition { get { return data[5] as CE; } set { data[5] = value; } }
     }
     public class MSH : compositeSegment
     {
@@ -156,5 +158,34 @@ namespace HL7LIB.ConcretcompositeType
         public ST Strain { get { return data[36] as ST; } set { data[36] = value; } }
         public CE ProductionClassCode { get { return data[37] as CE; } set { data[37] = value; } }
         public CWE TribalCitizenship { get { return data[38] as CWE; } set { data[38] = value; } }
+    }
+    public class ERR : compositeSegment
+    {
+        public ERR(compositeType parent, string name) : base(parent, name)
+        {
+            data = new abstractType[11];
+            data[0] = new ELD(this,"ErrorCodeandLocation");
+            data[1] = new ERL(this,"ErrorLocation");
+            data[2] = new ID("Severity");
+            data[3] = new CWE(this,"ApplicationErrorCode");
+            data[4] = new ST("ApplicationErrorParameter");
+            data[5] = new TX("DiagnosticInformation");
+            data[6] = new TX("UserMessage");
+            data[7] = new IS("InformPersonIndicator");
+            data[8] = new CWE(this,"OverrideType");
+            data[9] = new CWE(this,"OverrideReasonCode");
+            data[10] = new XTN(this,"HelpDeskContactPoint");
+        }
+        public ELD ErrorCodeandLocation { get { return data[0] as ELD; } set { data[0] = value; } }
+        public ERL ErrorLocation { get { return data[1] as ERL; } set { data[1] = value; } }
+        public ID Severity { get { return data[2] as ID; } set { data[2] = value; } }
+        public CWE ApplicationErrorCode { get { return data[3] as CWE; } set { data[3] = value; } }
+        public ST ApplicationErrorParameter { get { return data[4] as ST; } set { data[4] = value; } }
+        public TX DiagnosticInformation { get { return data[5] as TX; } set { data[5] = value; } }
+        public TX UserMessage { get { return data[6] as TX; } set { data[6] = value; } }
+        public IS InformPersonIndicator { get { return data[7] as IS; } set { data[7] = value; } }
+        public CWE OverrideType { get { return data[8] as CWE; } set { data[8] = value; } }
+        public CWE OverrideReasonCode { get { return data[9] as CWE; } set { data[9] = value; } }
+        public XTN HelpDeskContactPoint { get { return data[10] as XTN; } set { data[10] = value; } }
     }
 }

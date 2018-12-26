@@ -92,4 +92,18 @@ namespace HL7LIB.ConcretcompositeType
 
         }
     }
+    public class SAD : primitiveType
+    {
+        public SAD(string name) : base(name)
+        {
+
+        }
+    }
+    public class DR : primitiveType
+    {
+        public DR(string name) : base(name)
+        {
+
+        }
+    }
 }

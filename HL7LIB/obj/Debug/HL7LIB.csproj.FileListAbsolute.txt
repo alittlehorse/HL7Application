@@ -10,3 +10,9 @@ E:\github\HL7Application\HL7LIB\obj\Debug\HL7LIB.csprojAssemblyReference.cache
 E:\github\HL7Application\HL7LIB\obj\Debug\HL7LIB.csproj.CoreCompileInputs.cache
 E:\github\HL7Application\HL7LIB\obj\Debug\HL7LIB.dll
 E:\github\HL7Application\HL7LIB\obj\Debug\HL7LIB.pdb
+D:\GitProject\HL7Application\HL7LIB\obj\Debug\HL7LIB.csprojAssemblyReference.cache
+D:\GitProject\HL7Application\HL7LIB\obj\Debug\HL7LIB.csproj.CoreCompileInputs.cache
+D:\GitProject\HL7Application\HL7LIB\obj\Debug\HL7LIB.dll
+D:\GitProject\HL7Application\HL7LIB\obj\Debug\HL7LIB.pdb
+D:\GitProject\HL7Application\HL7LIB\bin\Debug\HL7LIB.dll
+D:\GitProject\HL7Application\HL7LIB\bin\Debug\HL7LIB.pdb

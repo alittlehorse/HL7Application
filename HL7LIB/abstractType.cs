@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace HL7LIB
 {
+    //*******************************************************************//
     public abstract class abstractType
     {
         protected string name;
@@ -23,11 +24,8 @@ namespace HL7LIB
 
         public string Value
         {
-            get => value.ToString();
-            set
-            {
-                Parse(value);
-            }
+            get => ToString();
+            set => Parse(value);
         }
         /// <summary>
         /// 访问common.version
@@ -46,7 +44,7 @@ namespace HL7LIB
         public abstract override string ToString();
     }
 
-
+    //********************************************************************//
     public class primitiveType : abstractType
     {
         public primitiveType(string name) : base(name) {
@@ -93,15 +91,16 @@ namespace HL7LIB
         /// </summary>
         public string delimiter;
 
-        //*******************************************//
+        //**************************************************************//
 
         /// <summary>
-        /// 将文本切割分向下层,直到无法再分
+        /// 解码
         /// </summary>
         /// <param name="text"></param>
         /// <returns></returns>
         public override bool Parse(string text)
         {
+            //从字符串中取出分割字符
             string[] subs = text.Split(delimiter[0]);
             for (int i = 0; i < subs.Length; i++)
             {
@@ -112,7 +111,7 @@ namespace HL7LIB
             return true;
         }
         /// <summary>
-        /// 组合模式的向下拼接
+        /// 编码
         /// </summary>
         /// <returns></returns>
         public override string ToString()
@@ -122,15 +121,24 @@ namespace HL7LIB
             for(int i = data.Length-1;i>=0;i--)
             {
                 if (data[i] == null) continue;
-                if (isEmpty)
+                if (isEmpty)//data[i]不等于null,但是str中为空
                 {
                     str = data[i].ToString();
                     if (str != null && str.Length > 0)
                     {
                         isEmpty = false;
                     }
-                    else
+                }
+                else//data[i]存在且，str已经有值
+                {
+                    if (data[i].ToString() != "|")
+                    {
                         str = data[i].ToString() + delimiter + str;
+                    }
+                    else//对MSH单独处理
+                    {
+                        str = data[i].ToString() + str;
+                    }
                 }
             }
             value = str;

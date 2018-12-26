@@ -8,10 +8,9 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Net.Sockets;
 using System.Windows.Forms;
-using System.IO;
 using HL7Socket;
 using MLLP;
-using System.Net;
+using HL7LIB.ConcretcompositeType;
 
 
 namespace HL7Application
@@ -120,6 +119,15 @@ namespace HL7Application
                 rtx_ReceiveMessage.AppendText(args.message);
             });
         }
+
+        private void FormApplication_Load(object sender, EventArgs e)
+        {
+            ACK ack = new ACK(null, "ACK01");
+            String str = @"MSH|^~\&|RIS||HIS||200405201205||ACK|RIS0001|P|2.4" + "\r" + "MSA|AE|MSG0001|type error|||102" + "\r";
+            ack.Value = str;
+            txMessage.Text = ack.Value;
+        }
+
     }
 }
 
