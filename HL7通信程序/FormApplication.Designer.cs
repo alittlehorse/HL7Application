@@ -32,7 +32,7 @@
             this.tpMessage = new System.Windows.Forms.TabPage();
             this.txMessage = new System.Windows.Forms.TextBox();
             this.btSend = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnSample = new System.Windows.Forms.Button();
             this.tpSend = new System.Windows.Forms.TabPage();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
@@ -88,7 +88,7 @@
             // 
             this.tpMessage.Controls.Add(this.txMessage);
             this.tpMessage.Controls.Add(this.btSend);
-            this.tpMessage.Controls.Add(this.button1);
+            this.tpMessage.Controls.Add(this.btnSample);
             this.tpMessage.Location = new System.Drawing.Point(4, 28);
             this.tpMessage.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.tpMessage.Name = "tpMessage";
@@ -119,15 +119,16 @@
             this.btSend.UseVisualStyleBackColor = true;
             this.btSend.Click += new System.EventHandler(this.button2_Click);
             // 
-            // button1
+            // btnSample
             // 
-            this.button1.Location = new System.Drawing.Point(240, 628);
-            this.button1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(183, 28);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Create a Sample";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnSample.Location = new System.Drawing.Point(240, 628);
+            this.btnSample.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnSample.Name = "btnSample";
+            this.btnSample.Size = new System.Drawing.Size(183, 28);
+            this.btnSample.TabIndex = 0;
+            this.btnSample.Text = "Create a Sample";
+            this.btnSample.UseVisualStyleBackColor = true;
+            this.btnSample.Click += new System.EventHandler(this.btnSample_Click);
             // 
             // tpSend
             // 
@@ -400,7 +401,6 @@
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "FormApplication";
             this.Text = "Form1";
-            this.Load += new System.EventHandler(this.FormApplication_Load);
             this.MessagePage.ResumeLayout(false);
             this.tpMessage.ResumeLayout(false);
             this.tpMessage.PerformLayout();
@@ -428,7 +428,7 @@
         private System.Windows.Forms.TabPage tpSend;
         private System.Windows.Forms.TabPage tpReceivingConnection;
         private System.Windows.Forms.Button btSend;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnSample;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label1;

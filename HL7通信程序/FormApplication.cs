@@ -11,6 +11,7 @@ using System.Windows.Forms;
 using HL7Socket;
 using MLLP;
 using HL7LIB.ConcretcompositeType;
+using HL7LIB;
 
 
 namespace HL7Application
@@ -120,14 +121,28 @@ namespace HL7Application
             });
         }
 
-        private void FormApplication_Load(object sender, EventArgs e)
-        {
-            ACK ack = new ACK(null, "ACK01");
-            String str = @"MSH|^~\&|RIS||HIS||200405201205||ACK|RIS0001|P|2.4" + "\r" + "MSA|AE|MSG0001|type error|||102" + "\r";
-            ack.Value = str;
-            txMessage.Text = ack.Value;
-        }
 
+        private void btnSample_Click(object sender, EventArgs e)
+        {
+            messageFactory factory = new messageFactory();
+            ACK msg = factory.Create(null, enumMessage.ACK, "ACK") as ACK;
+            msg.msh.FieldSeparator.Value = "|";
+            msg.msh.EncodingCharacters.Value = "^~\\&";
+            msg.msh.DateOrTimeOfMessage.Value = DateTime.Now.ToString("yyyyMMddhhmmss.fff");
+            msg.msh.MessageType.messagecode.Value = "ACK";
+            msg.msh.MessageType.triggerevent.Value = "A01";
+            msg.msh.MessageType.messagestructure.Value = "ACK_A01";
+            //msg.msh.MessageType.Value = "ACK^A01^ACK_A01";
+            msg.msh.MessageControlID.Value = "A00002";
+            msg.msh.ProcessingID.processingID.Value = "P";
+            msg.msh.VersionID.versionID.Value = "2.4";
+            msg.msa.AcknowledgmentCode.Value = "AA";
+            msg.msa.MessageControlID.Value = "MSG00001";
+            msg.msa.TextMessage.Value = "Success";
+
+            txMessage.Text = msg.ToString();
+
+        }
     }
 }
 

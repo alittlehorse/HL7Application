@@ -40,6 +40,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="abstractFactory.cs" />
     <Compile Include="abstractType.cs" />
     <Compile Include="ACK.cs" />
     <Compile Include="CE.cs" />
