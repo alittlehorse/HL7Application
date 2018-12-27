@@ -141,6 +141,25 @@ namespace HL7Application
             msg.msa.TextMessage.Value = "Success";
 
             txMessage.Text = msg.ToString();
+            ORM orm = factory.Create(null, enumMessage.ORM, "ORM") as ORM;
+            orm.msh.FieldSeparator.Value = "|";
+            orm.msh.EncodingCharacters.Value = "^~\\&";
+            orm.msh.DateOrTimeOfMessage.Value = DateTime.Now.ToString("yyyyMMddhhmmss.fff");
+            orm.msh.MessageType.messagecode.Value = "ORM";
+            orm.msh.MessageType.triggerevent.Value = "001";
+            orm.msh.MessageType.messagestructure.Value = "ORM_001";
+
+        }
+
+        private void FormApplication_Load(object sender, EventArgs e)
+        {
+            messageFactory factory = new messageFactory();
+            ACK msg = factory.Create(null, enumMessage.ACK, "ACK")as ACK;
+
+            msg.Parse("MSH|^~\\&|HIS|00001|LIS|1234|2004112754000||ACK^A01^ACK_A01|0200002|P|2.4\rMSA|AE|0200001|type error|||102\r");
+            //txtMessage.Text = msg.ToString(); 
+            txMessage.Text = msg.msa.MessageControlID.Value;
+            txMessage.Text = msg.msa.TextMessage.Value;
 
         }
     }

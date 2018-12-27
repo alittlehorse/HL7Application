@@ -102,6 +102,8 @@ namespace HL7LIB
         {
             //从字符串中取出分割字符
             string[] subs = text.Split(delimiter[0]);
+
+            //一个很大的问题，如果遇见可选项了怎么办
             for (int i = 0; i < subs.Length; i++)
             {
                 if (subs[i] == null || subs[i].Length == 0) continue;

@@ -401,6 +401,7 @@
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "FormApplication";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.FormApplication_Load);
             this.MessagePage.ResumeLayout(false);
             this.tpMessage.ResumeLayout(false);
             this.tpMessage.PerformLayout();

@@ -351,4 +351,141 @@ namespace HL7LIB.ConcretcompositeType
         public ST alternatecodingsystemversionID { get { return data[7] as ST; } set { data[7] = value; } }
         public ST originaltext { get { return data[8] as ST; } set { data[8] = value; } }
     }
+
+  
+    public class XON : compositeField
+    {
+        public XON(compositeType parent, string name) : base(parent, name)
+        {
+            data = new abstractType[8];
+            data[0] = new ST("organizationname");
+            data[1] = new IS("organizationnametypecode");
+            data[2] = new NM("checkdigit");
+            data[3] = new ID("codeidentifyingthecheckdigitschemeemployed");
+            data[4] = new HD(this,"assigningauthority");
+            data[5] = new IS("identifiertypecode");
+            data[6] = new HD(this,"assigningfacilityID");
+            data[7] = new ID("NameRepresentationcode");
+        }
+        public ST organizationname { get { return data[0] as ST; } set { data[0] = value; } }
+        public IS organizationnametypecode { get { return data[1] as IS; } set { data[1] = value; } }
+        public NM checkdigit { get { return data[2] as NM; } set { data[2] = value; } }
+        public ID codeidentifyingthecheckdigitschemeemployed { get { return data[3] as ID; } set { data[3] = value; } }
+        public HD assigningauthority { get { return data[4] as HD; } set { data[4] = value; } }
+        public IS identifiertypecode { get { return data[5] as IS; } set { data[5] = value; } }
+        public HD assigningfacilityID { get { return data[6] as HD; } set { data[6] = value; } }
+        public ID NameRepresentationcode { get { return data[7] as ID; } set { data[7] = value; } }
+    }
+
+    public class PL : compositeField
+    {
+        public PL(compositeType parent, string name) : base(parent, name)
+        {
+            data = new abstractType[8];
+            data[0] = new IS("pointofcare");
+            data[1] = new IS("room");
+            data[2] = new IS("bed");
+            data[3] = new IS("locationstatus");
+            data[4] = new IS("personlocationtype");
+            data[5] = new IS("building");
+            data[6] = new IS("floor");
+            data[7] = new ST("Locationdescription");
+        }
+        public IS pointofcare { get { return data[0] as IS; } set { data[0] = value; } }
+        public IS room { get { return data[1] as IS; } set { data[1] = value; } }
+        public IS bed { get { return data[2] as IS; } set { data[2] = value; } }
+        public IS locationstatus { get { return data[3] as IS; } set { data[3] = value; } }
+        public IS personlocationtype { get { return data[4] as IS; } set { data[4] = value; } }
+        public IS building { get { return data[5] as IS; } set { data[5] = value; } }
+        public IS floor { get { return data[6] as IS; } set { data[6] = value; } }
+        public ST Locationdescription { get { return data[7] as ST; } set { data[7] = value; } }
+    }
+
+    public class FC : compositeField
+    {
+        public FC(compositeType parent, string name) : base(parent, name)
+        {
+            data = new abstractType[2];
+            data[0] = new IS("FinancialClass");
+            data[1] = new TS("EffectiveDate");
+        }
+        public IS FinancialClass { get { return data[0] as IS; } set { data[0] = value; } }
+        public TS EffectiveDate { get { return data[1] as TS; } set { data[1] = value; } }
+    }
+
+    public class CP : compositeField
+    {
+        public CP(compositeType parent, string name) : base(parent, name)
+        {
+            data = new abstractType[6];
+            data[0] = new MO("price");
+            data[1] = new ID("pricetype");
+            data[2] = new NM("fromvalue");
+            data[3] = new NM("tovalue");
+            data[4] = new CE(this,"rangeunits");
+            data[5] = new ID("rangetype");
+        }
+        public MO price { get { return data[0] as MO; } set { data[0] = value; } }
+        public ID pricetype { get { return data[1] as ID; } set { data[1] = value; } }
+        public NM fromvalue { get { return data[2] as NM; } set { data[2] = value; } }
+        public NM tovalue { get { return data[3] as NM; } set { data[3] = value; } }
+        public CE rangeunits { get { return data[4] as CE; } set { data[4] = value; } }
+        public ID rangetype { get { return data[5] as ID; } set { data[5] = value; } }
+    }
+
+    public class JCC : compositeField
+    {
+        public JCC(compositeType parent, string name) : base(parent, name)
+        {
+            data = new abstractType[2];
+            data[0] = new IS("jobcode");
+            data[1] = new IS("jobclass");
+        }
+        public IS jobcode { get { return data[0] as IS; } set { data[0] = value; } }
+        public IS jobclass { get { return data[1] as IS; } set { data[1] = value; } }
+    }
+
+    public class TQ : compositeField
+    {
+        public TQ(compositeType parent, string name) : base(parent, name)
+        {
+            data = new abstractType[12];
+            data[0] = new CQ(this, "quantity");
+            data[1] = new CM(this,"interval");
+            data[2] = new ST("duration");
+            data[3] = new TS("startdateOrtime");
+            data[4] = new TS("enddateOrtime");
+            data[5] = new ST("priority");
+            data[6] = new ST("condition");
+            data[7] = new ST("text");
+            data[8] = new ST("conjunction");
+            data[9] = new CM(this,"ordersequencing");
+            data[10] = new CE(this, "occurrenceduration");
+            data[11] = new NM("totaloccurences");
+        }
+        public CQ quantity { get { return data[0] as CQ; } set { data[0] = value; } }
+        public CM interval { get { return data[1] as CM; } set { data[1] = value; } }
+        public ST duration { get { return data[2] as ST; } set { data[2] = value; } }
+        public TS startdateOrtime { get { return data[3] as TS; } set { data[3] = value; } }
+        public TS enddateOrtime { get { return data[4] as TS; } set { data[4] = value; } }
+        public ST priority { get { return data[5] as ST; } set { data[5] = value; } }
+        public ST condition { get { return data[6] as ST; } set { data[6] = value; } }
+        public ST text { get { return data[7] as ST; } set { data[7] = value; } }
+        public ST conjunction { get { return data[8] as ST; } set { data[8] = value; } }
+        public CM ordersequencing { get { return data[9] as CM; } set { data[9] = value; } }
+        public CE occurrenceduration { get { return data[10] as CE; } set { data[10] = value; } }
+        public NM totaloccurences { get { return data[11] as NM; } set { data[11] = value; } }
+    }
+
+    public class CQ : compositeField
+    {
+        public CQ(compositeType parent, string name) : base(parent, name)
+        {
+            data = new abstractType[2];
+            data[0] = new NM("quantity");
+            data[1] = new CE(this,"units");
+        }
+        public NM quantity { get { return data[0] as NM; } set { data[0] = value; } }
+        public CE units { get { return data[1] as CE; } set { data[1] = value; } }
+    }
 }

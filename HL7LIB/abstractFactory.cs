@@ -28,6 +28,9 @@ namespace HL7LIB
                 case enumMessage.ACK:
                     tmp = new ACK(parent, name);
                     break;
+                case enumMessage.ORM:
+                    tmp = new ORM(parent, name);
+                    break;
                 default:
                     throw new NotSupportedException();
             }
@@ -51,6 +54,21 @@ namespace HL7LIB
                 case enumSegment.MSH: tmp = new MSH(parent, name); break;
                 case enumSegment.MSA: tmp = new MSA(parent, name); break;
                 case enumSegment.ERR: tmp = new ERR(parent, name); break;
+                case enumSegment.NTE: tmp = new NTE(parent, name); break;
+                case enumSegment.PD1: tmp = new PD1(parent, name); break;
+                case enumSegment.PV1: tmp = new PV1(parent, name); break;
+                case enumSegment.PV2: tmp = new PV2(parent, name); break;
+                case enumSegment.IN1: tmp = new IN1(parent, name); break;
+                case enumSegment.IN2: tmp = new IN2(parent, name); break;
+                case enumSegment.IN3: tmp = new IN3(parent, name); break;
+                case enumSegment.GT1: tmp = new GT1(parent, name); break;
+                case enumSegment.AL1: tmp = new AL1(parent, name); break;
+                case enumSegment.ORC: tmp = new ORC(parent, name); break;
+                case enumSegment.OBR: tmp = new OBR(parent, name); break;
+                case enumSegment.CTI: tmp = new CTI(parent, name); break;
+                case enumSegment.BLG: tmp = new BLG(parent, name); break;
+                case enumSegment.DG1: tmp = new DG1(parent, name); break;
+                case enumSegment.OBX: tmp = new OBX(parent, name); break;
                 default: throw new NotSupportedException();
             }
             return tmp;
@@ -86,6 +104,8 @@ namespace HL7LIB
                 case enumPrimitive.TN: tmp = new TN(name); break;
                 case enumPrimitive.TS: tmp = new TS(name); break;
                 case enumPrimitive.TX: tmp = new TX(name); break;
+                case enumPrimitive.VARIES: tmp = new VARIES(name); break;
+                case enumPrimitive.MO: tmp = new MO(name); break;
                 default:
                     throw new NotSupportedException();
             }
@@ -126,6 +146,13 @@ namespace HL7LIB
                 case enumField.XPN: tmp = new XPN(parent, name); break;
                 case enumField.XTN: tmp = new XTN(parent, name); break;
                 case enumField.ERL: tmp = new ERL(parent, name); break;
+                case enumField.FC: tmp = new FC(parent, name); break;
+                case enumField.XON: tmp = new XON(parent, name); break;
+                case enumField.PL: tmp = new PL(parent, name); break;
+                case enumField.CP: tmp = new CP(parent, name); break;
+                case enumField.JCC: tmp = new JCC(parent, name); break;
+                case enumField.TQ: tmp = new TQ(parent, name); break;
+                case enumField.CQ: tmp = new CQ(parent, name); break;
                 default: throw new NotSupportedException();
             }
             return tmp;
@@ -136,21 +163,23 @@ namespace HL7LIB
 public enum enumMessage
 {
         ACK,
-        ADT
+        ADT,
+        ORM
  };
 public  enum enumField
 {
-        CE, FN, CX, XCN, HD, MSG, PT, VID, ELD, CM, EI, XPN, XAD, XTN, DLN, CWE ,ERL       
+        CE, FN, CX, XCN, HD, MSG, PT, VID, ELD, CM, EI, XPN, XAD, XTN, DLN, CWE ,ERL,XON,PL,FC,CP,JCC,TQ,
+        CQ
 };
 public enum enumPrimitive
 {
-        ID, IS, FT, TN, TX, TS, TM, DT, SI, ST, NM, SAD, DR
+        ID, IS, FT, TN, TX, TS, TM, DT, SI, ST, NM, SAD, DR,MO,VARIES
 };
 public enum enumSegment
 {
         MSH,
         MSA,
         ERR,
-        PID
+        PID,NTE,PD1,PV1,PV2,IN1,IN2,IN3,GT1,AL1,ORC,OBR,CTI,BLG,DG1,OBX
 };
     

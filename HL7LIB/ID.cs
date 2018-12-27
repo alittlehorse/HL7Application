@@ -92,6 +92,11 @@ namespace HL7LIB.ConcretcompositeType
 
         }
     }
+
+    //***************************************************************************
+    //******************************权宜之计*************************************
+    //***************************************************************************
+
     public class SAD : primitiveType
     {
         public SAD(string name) : base(name)
@@ -102,6 +107,21 @@ namespace HL7LIB.ConcretcompositeType
     public class DR : primitiveType
     {
         public DR(string name) : base(name)
+        {
+
+        }
+    }
+
+    public class MO : primitiveType
+    {
+        public MO(string name) : base(name)
+        {
+
+        }
+    }
+    public class VARIES : primitiveType
+    {
+        public VARIES(string name) : base(name)
         {
 
         }
