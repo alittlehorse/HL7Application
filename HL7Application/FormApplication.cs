@@ -140,7 +140,7 @@ namespace HL7Application
             msg.msa.MessageControlID.Value = "MSG00001";
             msg.msa.TextMessage.Value = "Success";
 
-            txMessage.Text = msg.ToString();
+            txMessage.Text = msg.ToString()+"\n";
             ORM orm = factory.Create(null, enumMessage.ORM, "ORM") as ORM;
             orm.msh.FieldSeparator.Value = "|";
             orm.msh.EncodingCharacters.Value = "^~\\&";
@@ -148,7 +148,7 @@ namespace HL7Application
             orm.msh.MessageType.messagecode.Value = "ORM";
             orm.msh.MessageType.triggerevent.Value = "001";
             orm.msh.MessageType.messagestructure.Value = "ORM_001";
-
+            txMessage.Text += orm.ToString();
         }
 
         private void FormApplication_Load(object sender, EventArgs e)
