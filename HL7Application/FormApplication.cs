@@ -148,6 +148,7 @@ namespace HL7Application
             orm.msh.MessageType.messagecode.Value = "ORM";
             orm.msh.MessageType.triggerevent.Value = "001";
             orm.msh.MessageType.messagestructure.Value = "ORM_001";
+            orm.pid.PatientName.Value="Wangzifu";
             txMessage.Text += orm.ToString();
         }
 

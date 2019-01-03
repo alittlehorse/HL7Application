@@ -118,7 +118,7 @@ namespace HL7LIB
         /// <returns></returns>
         public override string ToString()
         {
-            String str = "";
+            String str = null;
             bool isEmpty = true;
             for(int i = data.Length-1;i>=0;i--)
             {
