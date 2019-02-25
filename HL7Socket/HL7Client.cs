@@ -31,31 +31,26 @@ namespace HL7Socket
         {            
             this.remoteHost = remoteHost;
             this.remotePort = remotePort;
-            msgSend msg = null;
             try
             {
                 //这个事件的触发在构造函数里面,所以无法触发,想想别的办法,不过不影响
                 //看服务端就可以知道是否连接上
                 client = new TcpClient(remoteHost, remotePort);
-                string m = String.Format("Connect Success: the Client is connect with{0}:{1}", remoteHost, remotePort);
-                msg = new msgSend(m);
-                OnevtSendMessage(msg);
+                //**********************************************
+                NetworkStream networkStream = client.GetStream();
+                br = new BinaryReader(networkStream);
+                bw = new BinaryWriter(networkStream);
+                //**************************************************
+                //事件的处理函数,将socket层和MLLP层连接起来
+
+
+                Task.Run(() => ReceiveData());
             }
-            catch
+            catch(Exception err)
             {
-                msg = new msgSend("Connect failed,please input a right port");
-                OnevtSendMessage(msg);
-                return;
+                throw err;
             }
-            //**********************************************
-            NetworkStream networkStream = client.GetStream();
-            br = new BinaryReader(networkStream);
-            bw = new BinaryWriter(networkStream);
-            //**************************************************
-            //事件的处理函数,将socket层和MLLP层连接起来
 
-
-            Task.Run(() => ReceiveData());
         }
         private void ReceiveData()
         {

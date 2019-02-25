@@ -488,4 +488,16 @@ namespace HL7LIB.ConcretcompositeType
         public NM quantity { get { return data[0] as NM; } set { data[0] = value; } }
         public CE units { get { return data[1] as CE; } set { data[1] = value; } }
     }
+
+    public class DLD : compositeField
+    {
+        public DLD(compositeType parent, string name) : base(parent, name)
+        {
+            data = new abstractType[2];
+            data[0] = new IS("dischargelocation");
+            data[1] = new TS("effectivedate");
+        }
+        public IS dischargelocation { get { return data[0] as IS; } set { data[0] = value; } }
+        public TS effectivedate { get { return data[1] as TS; } set { data[1] = value; } }
+    }
 }

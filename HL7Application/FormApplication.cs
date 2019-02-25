@@ -78,14 +78,31 @@ namespace HL7Application
         {
             String remoteHost = "127.0.0.1";
             int remotePort = int.Parse(textBox2.Text);
-            hL7Client = new HL7Client(remoteHost,remotePort);
-            hL7Client.evtReceived += mllpcontext.Input;
-            hL7Client.evtSendMessage += this.Update_rtx_ReceiveMessag;
+            try
+            {
+                hL7Client = new HL7Client(remoteHost, remotePort);
+                rtx_ReceiveMessage.Text = "连接成功";
+                hL7Client.evtReceived += mllpcontext.Input;
+                hL7Client.evtSendMessage += this.Update_rtx_ReceiveMessag;
+            }
+            catch
+            {
+                rtx_ReceiveMessage.Text = "连接失败";
+            }
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            hL7Client.SendMessage(txMessage.Text);
+            string MSH = "MSH|^~\\&|NES|NINTENDO|TESTSYSTEM|TESTFACILITY|20010101000000||ADT^A04|Q123456789T123456789X123456|P|2.3.1";
+            string EVN = "EVN|A04|20010101000000|||^KOOPA^BOWSER^^^^^^^CURRENT";
+            string PID = "PID|1||583070^^^ADT1|0123456789^AA^^JP|BLACK^CHARLES||19780214|M||WH|16 ARUNDEL PL^^ST. LOUIS^MO^63105|1234|(555)555-0123^HOME^JP:1234567|||S|MSH|12345678|||||||0|||||N";
+            string NK11 = "NK1|1|PEACH^PRINCESS^^^^|SO|ANOTHER CASTLE^^TOADSTOOL KINGDOM^NES^^JP|(123)555-1234|(123)555-2345|NOK|||||||||||||";
+            string NK12 = "NK1|2|TOADSTOOL^PRINCESS^^^^|SO|YET ANOTHER CASTLE^^TOADSTOOL KINGDOM^NES^^JP|(123)555-3456|(123)555-4567|EMC|||||||||||||";
+            string PV1 = "PV1|1|E|ABCD^EFGH^|||^^||5101^NELL^FREDERICK^P^^DR||CRD||||||||AO|0123456789|1|||||||||||||||||||MSH||A|||20010101000000";
+            string IN11 = "IN1|1|PAR^PARENT||||LUIGI";
+            string IN12 = "IN1|2|FRI^FRIEND||||PRINCESS";
+            string msg = MSH + "\x0d" + EVN + "\x0d" + PID + "\x0d" + NK11 + "\x0d" + NK12 + "\x0d" + PV1 + "\x0d" + IN11 + "\x0d" + IN12 + "\x0d";
+            hL7Client.SendMessage(msg);
         }
 
         private void btnConnectionStop_Click(object sender, EventArgs e)
@@ -117,11 +134,11 @@ namespace HL7Application
         {
             richTextBox1.Invoke((Action)delegate ()
             {
-                rtx_ReceiveMessage.AppendText(args.message);
+                richTextBox1.AppendText(args.message);
             });
         }
 
-
+//测试实例
         private void btnSample_Click(object sender, EventArgs e)
         {
             messageFactory factory = new messageFactory();
@@ -158,9 +175,8 @@ namespace HL7Application
             ACK msg = factory.Create(null, enumMessage.ACK, "ACK")as ACK;
 
             msg.Parse("MSH|^~\\&|HIS|00001|LIS|1234|2004112754000||ACK^A01^ACK_A01|0200002|P|2.4\rMSA|AE|0200001|type error|||102\r");
-            //txtMessage.Text = msg.ToString(); 
-            txMessage.Text = msg.msa.MessageControlID.Value;
-            txMessage.Text = msg.msa.TextMessage.Value;
+            txMessage.Text = msg.ToString(); 
+
 
         }
     }

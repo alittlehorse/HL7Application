@@ -169,7 +169,7 @@ public enum enumMessage
 public  enum enumField
 {
         CE, FN, CX, XCN, HD, MSG, PT, VID, ELD, CM, EI, XPN, XAD, XTN, DLN, CWE ,ERL,XON,PL,FC,CP,JCC,TQ,
-        CQ
+        CQ,DLD
 };
 public enum enumPrimitive
 {
